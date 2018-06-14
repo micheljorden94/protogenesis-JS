@@ -1,0 +1,43 @@
+ *{
+        margin:0;
+        padding:0;
+    }
+    nav{
+        width: 600px;
+        height: 400px;
+        margin:20px auto;
+        overflow: hidden;
+        position: relative;
+    }
+    #index{
+        position: absolute;
+        left:320px;
+        bottom: 20px;
+    
+    }
+    #index li{
+        width:8px;
+        height: 8px;
+        border: solid 1px gray;
+        border-radius: 100%;
+        background-color: #eee;
+        display: inline-block;
+    }
+    #img{
+        width: 600px;
+        height: 400px;
+    }
+    #img li{
+        width: 600px;
+        height: 400px;
+        position: absolute;/*必须设置为absolute，否则第一个li会把后面的都覆盖*/
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 1s ease-in;
+    }
+    #index .on{
+        background-color: black;
+    }
+    #img .opa-on{
+        opacity: 1;
+    }
